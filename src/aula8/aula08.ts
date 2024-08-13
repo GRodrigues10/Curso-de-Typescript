@@ -1,21 +1,21 @@
-let dados:object={
-    nome:'Gabriel',
-    idade:22,
-    trabalhando:false,
-    ola:()=>{
-        console.log('Olá você!')
-    },
-    info:(p)=>{
-        console.log(p)
-    }
+// let dados:object={
+//     nome:'Gabriel',
+//     idade:22,
+//     trabalhando:false,
+//     ola:()=>{
+//         console.log('Olá você!')
+//     },
+//     info:(p)=>{
+//         console.log(p)
+//     }
     
-}
+// }
 
-dados.nome = 'Duke'
-dados.ola();
-dados.info('função com parâmetro')
+// dados.nome = 'Duke'
+// dados.ola();
+// dados.info('função com parâmetro')
 
-console.log(dados.nome);
-console.log(typeof(dados));
+// console.log(dados.nome);
+// console.log(typeof(dados));
 
 
