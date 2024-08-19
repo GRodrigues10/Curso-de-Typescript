@@ -42,11 +42,15 @@ class Conta7 {
     }
 }
 class ContaPF7 extends Conta7 {
+    TaxaCalculo = 10;
     cpf;
     constructor(cpf, titular) {
         super(titular);
         this.cpf = cpf;
         console.log(`Conta PF Criada: ${titular}`);
+    }
+    CalcularTrib(valor) {
+        return valor * this.TaxaCalculo;
     }
     info() {
         console.log('\n');

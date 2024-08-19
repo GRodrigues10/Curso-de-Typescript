@@ -49,13 +49,23 @@ abstract class Conta7 {// Uma classe abstrata só serve de base para classes fil
     }
 }
 
-class ContaPF7 extends Conta7 {
+interface Tributos{
+    TaxaCalculo:number;
+    CalcularTrib(valor:number):number;
+}
+
+class ContaPF7 extends Conta7 implements Tributos{
+    TaxaCalculo = 10;
     cpf: number;
 
     constructor(cpf: number, titular: string) {
         super(titular);
         this.cpf = cpf;
         console.log(`Conta PF Criada: ${titular}`);
+    }
+
+    CalcularTrib(valor:number):number{
+        return valor * this.TaxaCalculo;
     }
 
     info() {
